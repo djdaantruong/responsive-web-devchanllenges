@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  max-width: 600;
+}
+
+#container {
+  max-width: 1440px;
+  padding: 24px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  flex-grow: 1;
+  margin-left: 40px;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+
+.main--img {
+  flex: 1;
+  max-width: 40rem;
+  cursor: pointer;
+}
+
+.main--img img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main--content {
+  flex: 1;
+  font-style: normal;
+  font-family: Space Mono;
+  letter-spacing: -0.035em;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 94.78px;
+  color: #333333;
+  margin-bottom: 36px;
+}
+
+.description {
+  margin: 0;
+  width: 75%;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35.54px;
+  color: #4f4f4f;
+}
+
+.play--button {
+  display: inline-block;
+  border: none;
+  padding: 24px 43px;
+  margin: 60px auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.73px;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.play--button:hover {
+  background-color: #474849;
+  color: white;
+}
+
+footer {
+  margin: 20px auto;
+  color: #bdbdbd;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.copyright a {
+  margin: 0 5px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 660px) {
+  #container {
+    padding: 24px;
+  }
+
+  main {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .main--content {
+    padding: 0 40px;
+  }
+
+  .headline {
+    width: 85%;
+    font-size: 48px;
+    line-height: 70px;
+    margin-top: 60px;
+  }
+
+  .description {
+    width: 65%;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
