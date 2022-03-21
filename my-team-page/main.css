@@ -1,0 +1,183 @@
+* {
+  color: inherit;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+header {
+  margin: 71px 30px 38px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-header h1 {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+  letter-spacing: -0.045em;
+  margin-bottom: 36px;
+}
+
+.team-info h1 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 27px;
+}
+
+.team-info h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  width: 75%;
+}
+
+.team-members {
+  padding: 0 19px 0 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+}
+
+.card-member__left,
+.card-member__right {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 64px; */
+  padding: 16px;
+}
+
+.card-member__right {
+  margin-top: 48px;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card-wrapper img {
+  width: 100%;
+}
+
+.card-name {
+  margin-top: 9px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card-jobtitle {
+  writing-mode: vertical-rl;
+  font-family: "PT Serif", serif;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-left: 6px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #a9a9a9;
+}
+
+.footer a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Desktop */
+
+@media (min-width: 720px) {
+  body {
+    padding: 0 50px;
+  }
+
+  header {
+    flex-direction: row;
+    /* margin: 96px 0px 72px; */
+    justify-content: space-between;
+  }
+
+  .team-info h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    width: 100%;
+  }
+
+  .team-members {
+    padding: 0;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 64px;
+    margin-bottom: 48px;
+  }
+
+  .team-info {
+    width: 400px;
+  }
+
+  .card-wrapper img {
+    width: 100%;
+  }
+
+  .card-member__right {
+    margin-top: 0;
+  }
+
+  .margin__top {
+    margin-top: 72px;
+  }
+
+  .card-name {
+    font-size: 18px;
+  }
+
+  .card-jobtitle {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1023px) {
+  body {
+    padding: 0 100px;
+  }
+
+  .team-info {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1439px) {
+  body {
+    padding: 0 200px;
+  }
+
+  .team-info {
+    max-width: 500px;
+  }
+}
