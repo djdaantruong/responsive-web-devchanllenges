@@ -1,61 +1,98 @@
+:root {
+  /* color */
+  --background-color: #181719;
+
+  /* font */
+  --logo-font: 'Crimson Pro', sans-serif;
+  --heading-font: 'Lora', sans-serif;
+  --main-font: 'Montserrat', sans-serif;
+}
+
 *,
 *:before,
 *:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.3 ease-in-out;
+  color: #ffffff;
 }
 
-html,
-body,
-.container,
-.header,
-.main,
-.main__image,
-.footer {
-  width: 100%;
-}
-
-html,
-body,
-.container {
-  height: 100%;
-  background-color: #181719;
-  font-family: 'Montserrat', sans-serif;
+body {
+  background: var(--background-color);
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 50px 77px;
+  max-width: 1288px;
 }
 
-/******* HEADER SECTION *******/
-.header {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  z-index: 10;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  background-color: transparent;
 }
 
-.header__logo {
-  border: 1px solid #fff;
+.navbar .container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .space {
+  flex-grow: 1;
+}
+
+.navbar .menu-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 86px;
+}
+
+.navbar .logo {
+  border: 1px solid #ffffff;
   padding: 8px;
 }
 
-.header__logoLink {
-  text-decoration: none;
-}
-
-.header__logoText {
-  font-family: 'Crimson Pro';
+.navbar .logo span {
+  font-family: var(--logo-font);
   font-weight: 200;
   font-size: 14px;
-  line-height: 16px;
   text-transform: uppercase;
 }
 
+.navbar .menu-content a {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* fixme
+.navbar .menu-content a:hover {
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 2px solid #ffffff;
+} */
+
+.navbar .menu-content a.active {
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 2px solid #ffffff;
+}
+
+/******* HEADER SECTION *******/
+/*
 .header__nav {
   height: 100%;
   transition: all 0.3s ease-in;
@@ -93,13 +130,11 @@ body,
   line-height: 22px;
   background: transparent;
   border: none;
-  /* margin: auto 0; */
   display: block;
   outline: none;
 
   position: relative;
   transition: 0.3s;
-  /* the trick */
   padding: 10px;
 }
 
@@ -122,9 +157,11 @@ body,
 
 .navbar__link:hover::before {
   width: 0%;
-  /* the other part of the trick */
+  /* the other part of the trick
   padding: 0 10px;
 }
+
+*/
 
 .navbar__icons {
   margin: auto 0;
@@ -174,6 +211,7 @@ body,
 .navbar__mobile-menu li {
   margin-bottom: 10px;
 }
+*/
 
 /******* HERO SECTION *******/
 
@@ -306,8 +344,11 @@ body,
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 700px) {
-  .navbar {
+@media only screen and (max-width: 375px) {
+  .navbar .menu-content {
+    display: none;
+  }
+  /* .navbar {
     padding: 0;
   }
 
@@ -344,5 +385,5 @@ body,
   .hero__banner {
     width: 391.06px;
     height: 279.34px;
-  }
+  } */
 }
