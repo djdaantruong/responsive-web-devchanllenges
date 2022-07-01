@@ -17,9 +17,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
 
     <link rel="stylesheet" href="./css/style.css" />
@@ -35,52 +41,51 @@
               <span class="logo-text">This Interior</span>
             </a>
           </div>
-          <div class="space"></div>
-          <div class="menu">
-            <ul class="menu-content">
-              <li><a href="/home" class="active">Home</a></li>
+          <div class="menu-wrapper">
+            <span class="menuClose material-symbols-outlined"> close </span>
+            <ul class="menu">
+              <li><a href="/home" class="actived">Home</a></li>
               <li><a href="/collection">Collection</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
+          <span class="menuOpen material-symbols-outlined"> menu </span>
         </div>
       </div>
     </header>
-    <!-- <main>
-      <section class="hero" id="hero">
-        <div class="container">
-          <div class="content-left">
-            <h1 class="heading">Modern interior</h1>
-            <p class="subheading">
-              A full-Service residential & commercial interior design and
-              staging company offering professional organizing & eco-services.
-            </p>
-            <a href="#" class="btn-learn"><span>Read more &rarr;</span></a>
+    <section class="hero">
+      <div class="container">
+        <div class="content-left">
+          <h1 class="heading">Modern interior</h1>
+          <p class="subheading">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <a href="#" class="btn-learn"><span>Read more &rarr;</span></a>
+        </div>
+        <div class="content-right">
+          <div class="thumnail">
+            <img src="./img/photo1.png" alt="" />
           </div>
-          <div class="content-right">
-            <div class="thumnail">
-              <img src="./img/photo1.png" alt="" />
+          <div class="card">
+            <div class="card-header">
+              <div class="card-avatar">
+                <img src="./img/photo2.png" alt="" />
+              </div>
+              <div class="card-info">
+                <p class="card-name">Aliza Webber</p>
+                <p class="card-job">Interior designer</p>
+              </div>
             </div>
-            <div class="card">
-              <div class="card-header">
-                <div class="card-thumbnail">
-                  <img src="./img/photo2.png" alt="" />
-                </div>
-                <div class="card-info">
-                  <p class="card-name">Aliza Webber</p>
-                  <p class="card-job">Interior designer</p>
-                </div>
-              </div>
-              <div class="card-content">
-                <p class="card-text">Designed in 2020 by Aliza Webber</p>
-              </div>
+            <div class="card-description">
+              <p>Designed in 2020 by Aliza Webber</p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
+      </div>
+    </section>
+    <section class="footer">
       <span class="footer-text"
         >created by
         <a href="https://twitter.com/djdaan_truong" target="_blank">
@@ -88,7 +93,7 @@
         </a>
         - devChallenges.io</span
       >
-    </footer> -->
+    </section>
     <script src="index.js"></script>
   </body>
 </html>
